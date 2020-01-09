@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Next Palindrome</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+</head>
+<body>
+<div class="container">
+	<br><br><br><br>
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Find Next Palindrome!</h1>
+    <p class="lead">This is a simple and faster approach to find the next palidrome of a given number. <a href="https://www.geeksforgeeks.org/given-a-number-find-next-smallest-palindrome-larger-than-this-number/">Tutorial link</a></p>
+  </div>
+</div>
+	<form class="form-inline" style="text-align: center;">
+	  <div class="form-group">
+	    <label class="sr-only" for="numberInput">Number</label>
+	    <input type="text" class="form-control form-control-lg" id="numberInput" placeholder="Enter Number">
+	  </div>
+	  <button type="submit" class="btn btn-primary">Find</button>
+	</form>
+	<br>
+	<center><div id="successAlert" class="alert alert-success" role="alert" style="display:none;width:50%;"></div></center>
+	<center><div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;width: 50%;"></div></center>
+</div>
+</body>
+</html>
